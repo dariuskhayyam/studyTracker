@@ -1,9 +1,16 @@
 import React from "react"
+import LogOut from "./LogOut"
+import CreateTable from "./CreateTable"
 
 class App extends React.Component{
     render(){
-        return{
-
-        }
+        return(
+            <div>
+                <LogOut />
+                <CreateTable />
+            </div>
+        )
     }
 }
+
+export default App

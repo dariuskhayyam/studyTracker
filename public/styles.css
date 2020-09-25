@@ -1,0 +1,59 @@
+html{
+    margin: 0;
+    background-image: linear-gradient(45deg, #32527b, #323334); 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;  
+}
+
+#btn{
+    background: transparent;
+    float: right;
+    padding: 0.9em 1.2em;
+    margin: 0.5em;
+    box-shadow: 0.01em;
+}
+
+#btn:hover{
+    background-color: #32527b;
+    color: white;
+    cursor: pointer;
+}
+
+#CreateTable{
+    background: transparent;
+    float: left;
+    padding: 0.5em 1em;
+    margin: 1.9em;
+    box-shadow: 0.01em;
+}
+
+#CreateTable:hover{
+    background-color: #323334;
+    color: white;
+    cursor: pointer;
+}
+
+.input{
+    display: block;
+    margin: 1em;
+}
+
+.dropdown form{
+    text-align: center;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    height: min-content;
+    margin: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+#CreateTable:focus + form, .dropdown:focus-within form {
+    opacity: 1;
+    pointer-events: all;
+}
